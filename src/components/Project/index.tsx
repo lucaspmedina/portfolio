@@ -19,6 +19,8 @@ interface ReposType {
   description: string;
   html_url: string;
   homepage: string;
+  disabled: boolean;
+  archived: boolean;
 }
 
 export const Project = (): JSX.Element => {
@@ -32,7 +34,7 @@ export const Project = (): JSX.Element => {
 
       const json = await data.json();
 
-      setRepositories(json);
+      setRepositories(json.filter((repo: ReposType) => !repo.disabled && !repo.archived));
 
       return json;
     };
