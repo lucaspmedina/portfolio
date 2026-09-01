@@ -3,7 +3,7 @@ export const userData = {
   githubUser: "lucaspmedina",
   linkedinUser: "lucaspmedina",
   whatsappNumber: "+5585997179999",
-  emailUser: "lucaspmedina@outlook.com",
+  emailUser: "poncianomedina@gmail.com",
   instagramUser: "lucaspmedina",
   facebookUser: "",
 };
